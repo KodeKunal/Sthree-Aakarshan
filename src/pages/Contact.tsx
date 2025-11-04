@@ -10,18 +10,44 @@ export default function Contact() {
             <li><span className="font-medium">Phone:</span> +91-7411131849</li>
             <li><span className="font-medium">Email:</span> hskiranask@gmail.com</li>
             <li><span className="font-medium">Hours:</span> Mon–Sat 10:00–19:00 · Sun 11:00–17:00</li>
+            <li>
+              <span className="font-medium">Facebook:</span>{' '}
+              <a
+                href="#" // TODO: replace with your Facebook page URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                Facebook link
+              </a>
+            </li>
+            <li>
+              <span className="font-medium">Instagram:</span>{' '}
+              <a
+                href="#" // TODO: replace with your Instagram page URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link"
+              >
+                Instagram link
+              </a>
+            </li>
           </ul>
         </div>
-        <form className="card p-6">
-          <h2 className="font-medium">Send a Message</h2>
-          <p className="mt-1 text-gray-600 text-sm">This is a demo form; replace with your preferred form service.</p>
-          <div className="mt-4 grid gap-3">
-            <input className="rounded-md border border-gray-300 px-3 py-2" placeholder="Your name" />
-            <input className="rounded-md border border-gray-300 px-3 py-2" placeholder="Email" type="email" />
-            <textarea className="rounded-md border border-gray-300 px-3 py-2" placeholder="Message" rows={4} />
-            <button type="button" className="btn-primary w-fit">Submit</button>
+        {/* Google Map Embed */}
+        <div className="card p-6">
+          <h2 className="font-medium">Find Us on Google Maps</h2>
+          <div className="mt-4 relative w-full" style={{ paddingTop: '56.25%' }}>
+            <iframe
+              title="Sthree Aakarshan location on Google Maps"
+              src="https://www.google.com/maps?q=Sthree%20Aakarshan%2C%20Shanubog%20Street%2C%20Tippu%20Nagar%2C%20Arsikere%2C%20Karnataka%20573103&output=embed"
+              className="absolute inset-0 h-full w-full rounded-md border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
-        </form>
+        </div>
       </div>
     </section>
   )

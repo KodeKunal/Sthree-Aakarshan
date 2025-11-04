@@ -1,5 +1,5 @@
 import Hero from '../components/Hero'
-import ProductGrid from '../components/ProductGrid'
+// import ProductGrid from '../components/ProductGrid'
 
 export default function Home() {
   return (
@@ -10,7 +10,10 @@ export default function Home() {
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-semibold">Welcome to Sthree Aakarshan</h2>
             <p className="mt-2 text-gray-600">
-              We’re a neighborhood boutique focused on thoughtful design, quality fabrics, and comfortable fits. From everyday essentials to festive wear, our collection is curated to celebrate your unique style.
+              We’re your neighborhood store for women’s fashion and daily essentials. Explore sarees, kurtis, kurta sets,
+              casual wear, dupattas, and accessories—plus trusted brands like Modicare (wellness & home care), Oriflame
+              (beauty & skincare), and Tupperware (kitchen & storage). Visit us for sizes, styling help, and the latest
+              arrivals.
             </p>
           </div>
           <div className="card p-6">
@@ -21,7 +24,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <ProductGrid />
     </>
   )
 }

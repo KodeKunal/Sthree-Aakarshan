@@ -7,9 +7,13 @@ export default function Navbar() {
   return (
     <header className="bg-white/80 backdrop-blur border-b border-gray-200 sticky top-0 z-40">
       <nav className="container-wide flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <span className="inline-block h-8 w-8 rounded-full bg-brand/10 ring-1 ring-brand" />
-          <span className="text-lg font-semibold">Sthree Aakarshan</span>
+        <Link to="/" className="flex items-center gap-3">
+          <img
+            src="/SA.jpg"
+            alt="Sthree aakarshan logo"
+            className="h-12 w-12 rounded-full object-cover ring-2 ring-brand ring-offset-2 ring-offset-white shadow-sm"
+          />
+          <span className="text-xl font-semibold">Sthree Aakarshan</span>
         </Link>
         <div className="hidden md:flex items-center gap-2">
           <NavLink to="/" className={navLinkClass} end>
